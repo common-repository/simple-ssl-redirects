@@ -1,0 +1,169 @@
+.ssslr-opts .card {
+	margin-top: 40px;
+	min-width: 0;
+	max-width: none;
+}
+
+.ssslr-opts form  {
+	margin-top: 35px;
+}
+
+.ssslr-opts form h3 {
+	margin-bottom: 20px;
+}
+
+.ssslr-opts .ssslr-input {
+	margin-bottom: 20px;
+}
+
+.ssslr-opts .ssslr-input:last-child {
+	margin-bottom: 0;
+}
+
+.ssslr-opts .ssslr-input input {
+	margin: 0 10px 0 0;
+}
+
+.ssslr-opts .ssslr-input label {
+	margin: 0 !important;
+}
+
+.ssslr-opts .ssslr-input div {
+	display: inline-block;
+	vertical-align: top;
+	max-width: calc(100% - 40px);
+}
+
+.ssslr-opts .ssslr-input input:disabled + div strong {
+	opacity: .6;
+}
+
+.ssslr-opts .additional-options {
+	padding-top: 20px;
+}
+
+.ssslr-opts p.submit {
+	margin-top: 30px;
+}
+
+.ssslr-opts .accordion {
+	padding-bottom: 30px;
+}
+
+.ssslr-opts .accordion > h3 {
+	margin-bottom: 0;
+}
+
+.ssslr-opts .accordion > h3 a {
+	position: relative;
+	background-color: var(--wp-admin-color-1);
+	display: block;
+	box-shadow: none;
+	color: #fff;
+	text-decoration: none;
+	padding: .5em .5em .5em 1.5em;
+	outline: 0;
+	transition: background-color 100ms ease-out;
+}
+
+.ssslr-opts .accordion > h3 a::before {
+	position: absolute;
+	top: .5em;
+	left: .33em;
+	font-family: dashicons;
+	content: "\f139";
+	transition: transform 300ms ease-out;
+}
+
+.ssslr-opts .accordion > h3 a.open::before {
+	transform: rotateZ(90deg);
+}
+
+.ssslr-opts .accordion > h3 a.open,
+.ssslr-opts .accordion > h3 a:focus,
+.ssslr-opts .accordion > h3 a:hover,
+.ssslr-opts .accordion > h3 a:active {
+	background-color: var(--wp-admin-color-2);
+	
+}
+
+.ssslr-opts .accordion > div {
+	padding-top: 1.5em;
+}
+
+.ssslr-opts .accordion > div > *:first-child {
+	margin-top: 0;
+}
+
+.ssslr-opts .accordion > div > *:last-child {
+	margin-bottom: 0;
+}
+
+.ssslr-opts .accordion pre {
+	margin: 0;
+}
+
+.ssslr-opts a.help {
+	display: inline-block;
+	vertical-align: center;
+	margin-left: .5em;
+	width: 1.5em;
+	height: 1.5em;
+	text-align: center;
+	line-height: 1.5em;
+	font-weight: bold;
+	border-radius: 50%;
+	background-color: var(--wp-admin-color-2);
+	color: #fff;
+	text-decoration: none;
+	outline: none;
+	box-shadow: none;
+}
+
+.ssslr-opts a.help:hover,
+.ssslr-opts a.help:focus,
+.ssslr-opts a.help:active {
+	background-color: var(--wp-admin-color-3);
+	outline: none;
+	box-shadow: none;
+}
+
+@media (min-width: 700px) {
+	
+	.ssslr-opts form {
+		margin-top: 40px;
+	}
+	
+	.ssslr-opts form h3:first-of-type {
+		margin-top: 0;
+	}
+	
+	.ssslr-opts .flex {
+		display: flex;
+		align-items: flex-start;
+		justify-content: space-between;
+	}
+	
+	.ssslr-opts form,
+	.ssslr-opts .card {
+		width: 50%;
+		width: calc(50% - 20px);
+	}
+	
+	.ssslr-opts .card {
+		margin-top: 40px;
+	}
+	
+}
+
+@media (min-width: 800px) {
+	
+	.ssslr-opts form {
+		width: 350px;
+	}
+	
+	.ssslr-opts .card {
+		width: calc(100% - 400px);
+	}
+	
+}
